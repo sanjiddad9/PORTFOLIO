@@ -1,0 +1,65 @@
+section.about-me {
+    padding: 70px 0;
+
+    p.title {
+        @include section-title;
+    }
+
+    h2.sub-title {
+        @include section-sub-title;
+    }
+
+    div.skills-box {
+        padding-top: 70px;
+        @include container;
+        @include display-flex;
+        justify-content: space-around;
+
+        div.skill {
+            div.progress-bar {
+                @include display-flex;
+                justify-content: center;
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+
+                div.inner-progress-bar {
+                    @include display-flex;
+                    justify-content: center;
+                    width: 170px;
+                    height: 170px;
+                    background-color: var(--Primary-color);
+                    border-radius: 50%;
+
+                    p.text {
+                        font-family: Saira-w500;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            div.HTML {
+                background-image: conic-gradient(var(--Black-color) 315deg, #D1D1D1 0deg);
+            }
+
+            div.CSS {
+                background-image: conic-gradient(var(--Black-color) 345deg, #D1D1D1 0deg);
+            }
+
+            div.JAVASCRIPT {
+                background-image: conic-gradient(var(--Black-color) 270deg, #D1D1D1 0deg);
+            }
+
+            div.PHP {
+                background-image: conic-gradient(var(--Black-color) 285deg, #D1D1D1 0deg);
+            }
+
+            p.skill-name {
+                font-family: Saira-w600;
+                font-size: 18px;
+                text-align: center;
+                padding-top: 14px;
+            }
+        }
+    }
+}
