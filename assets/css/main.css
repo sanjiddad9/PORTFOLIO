@@ -183,6 +183,7 @@ section.about-me h2.sub-title {
 }
 section.about-me div.skills-box {
   padding-top: 70px;
+  padding-bottom: 70px;
   width: 85%;
   height: 100%;
   margin: 0 auto;
@@ -228,6 +229,42 @@ section.about-me div.skills-box div.skill p.skill-name {
   font-size: 18px;
   text-align: center;
   padding-top: 14px;
+}
+section.about-me section.my-tale {
+  background-image: url(../img/Home-Background.jpg);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+section.about-me section.my-tale .content-box {
+  width: 70%;
+  margin: 0 auto;
+}
+section.about-me section.my-tale .content-box p.text {
+  font-family: Poppins-w600;
+  font-size: 32px;
+}
+section.about-me section.my-tale .content-box p.name {
+  font-family: Saira-w400;
+  padding-left: 15px;
+  border: 1px solid var(--Black-color);
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 20px 0 0 10px;
+}
+section.about-me section.my-tale section.white-space {
+  position: relative;
+  height: 150px;
+}
+section.about-me section.my-tale section.TOP {
+  top: 0;
+  background: linear-gradient(180deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
+}
+section.about-me section.my-tale section.BOTTOM {
+  bottom: -129px;
+  background: linear-gradient(0deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
 }
 
 * {

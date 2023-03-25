@@ -11,6 +11,7 @@ section.about-me {
 
     div.skills-box {
         padding-top: 70px;
+        padding-bottom: 70px;
         @include container;
         @include display-flex;
         justify-content: space-around;
@@ -60,6 +61,49 @@ section.about-me {
                 text-align: center;
                 padding-top: 14px;
             }
+        }
+    }
+
+    section.my-tale {
+        background-image: url(../img/Home-Background.jpg);
+        background-position: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        .content-box {
+            width: 70%;
+            margin: 0 auto;
+
+            p.text {
+                font-family: Poppins-w600;
+                font-size: 32px;
+            }
+
+            p.name {
+                font-family: Saira-w400;
+                padding-left: 15px;
+                border: 1px solid var(--Black-color);
+                border-bottom: 0;
+                border-right: 0;
+                border-top: 0;
+                margin: 20px 0 0 10px;
+            }
+        }
+
+        section.white-space {
+            position: relative;
+            height: 150px;
+        }
+
+        section.TOP {
+            top: 0;
+            background: linear-gradient(180deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
+        }
+
+        section.BOTTOM {
+            bottom: -129px;
+            background: linear-gradient(0deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
         }
     }
 }
