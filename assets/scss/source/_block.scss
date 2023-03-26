@@ -37,3 +37,18 @@
     opacity: 0.8;
     font-family: Poppins-w100;
 }
+
+@mixin primary-button {
+    display: inline-block;
+    font-family: Saira-w500;
+    background-color: var(--Black-color);
+    color: var(--Primary-color);
+    padding: 6px 34px;
+    border: 2px solid var(--Black-color);
+    margin-top: 30px;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--Black-color);
+    }
+}
