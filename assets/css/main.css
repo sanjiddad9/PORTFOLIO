@@ -241,6 +241,10 @@ section.about-me section.my-tale .content-box {
   width: 70%;
   margin: 0 auto;
 }
+section.about-me section.my-tale .content-box img {
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
 section.about-me section.my-tale .content-box p.text {
   font-family: Poppins-w600;
   font-size: 32px;
@@ -263,8 +267,56 @@ section.about-me section.my-tale section.TOP {
   background: linear-gradient(180deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
 }
 section.about-me section.my-tale section.BOTTOM {
-  bottom: -129px;
+  bottom: -32px;
   background: linear-gradient(0deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
+}
+section.about-me section.what-i-do {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section.about-me section.what-i-do h1.title {
+  text-align: center;
+  font-size: 32px;
+  font-family: Saira-w700;
+  position: relative;
+}
+section.about-me section.what-i-do h1.title::after {
+  content: "";
+  display: block;
+  background-color: var(--Black-color);
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+section.about-me section.what-i-do div.service-box {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+section.about-me section.what-i-do div.service-box div.box {
+  border: 1px solid var(--Text-color);
+  border-top: 0;
+  border-bottom: 0;
+  padding: 40px;
+}
+section.about-me section.what-i-do div.service-box div.box img {
+  height: 50px;
+  width: 50px;
+}
+section.about-me section.what-i-do div.service-box div.box h3.title {
+  font-family: Saira-w500;
+  padding: 15px 0;
+  font-size: 20px;
+}
+section.about-me section.what-i-do div.service-box div.box p.text {
+  font-family: Poppins-w300;
+  opacity: 0.7;
 }
 
 * {
@@ -296,4 +348,5 @@ ul {
 :root {
   --Primary-color: #EFEFEF;
   --Black-color: #2A2A2A;
+  --Text-color: #D1D1D1;
 }/*# sourceMappingURL=main.css.map */
