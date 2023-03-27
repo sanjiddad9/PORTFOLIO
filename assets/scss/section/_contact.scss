@@ -67,6 +67,7 @@ section.contact {
 
     div.my-info {
         @include display-flex;
+        align-items: normal;
         justify-content: space-between;
         width: 60%;
         margin: 0 auto;
@@ -89,15 +90,6 @@ section.contact {
             }
         }
     }
-
-
-
-
-
-
-
-
-
 
     section.white-space {
         position: relative;

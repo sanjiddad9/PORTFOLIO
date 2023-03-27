@@ -1,15 +1,22 @@
 @import 'source/block';
 @import 'source/font';
+@import 'section/side';
 @import 'section/header';
 @import 'section/user';
 @import 'section/about';
+@import 'section/resume';
 @import 'section/contact';
+@import 'section/footer';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: all 0.4s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -19,6 +26,10 @@ body {
     border: none;
     overflow-x: hidden;
     user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {

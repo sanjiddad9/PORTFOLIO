@@ -52,3 +52,60 @@
         color: var(--Black-color);
     }
 }
+
+@mixin resume-heading-style {
+    position: relative;
+
+    .number {
+        font-family: Saira-w300;
+        font-size: 18px;
+        width: 47px;
+        line-height: 46px;
+        text-align: center;
+        background-color: var(--Black-color);
+        color: var(--Primary-color);
+        display: inline-block;
+        border-radius: 2px;
+    }
+
+    .number-block-style {
+        font-family: Poppins-w500;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, var(--Text-color) 25%, var(--Primary-color));
+        padding: 15px 0 10px 65px;
+        z-index: -1;
+    }
+}
+
+@mixin resume-content-style {
+    border: 1px solid var(--Text-color);
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    margin-left: 20px;
+    padding: 20px 35px;
+
+    .content-title {
+        font-family: Saira-w800;
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+
+    .content-sub-title {
+        font-family: Poppins-w300;
+        font-size: 11px;
+        padding-bottom: 15px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 30px;
+        opacity: 0.8;
+        font-family: Poppins-w300;
+        width: 90%;
+    }
+}
