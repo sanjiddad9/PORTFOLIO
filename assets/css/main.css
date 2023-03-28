@@ -70,6 +70,46 @@
   font-family: Saira-w900;
   src: url(../font/Saira/Saira-Black.ttf);
 }
+section.perloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Primary-color);
+  height: 100vh;
+  position: relative;
+  z-index: 101;
+}
+section.perloader div.ring {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 5px var(--Black-color);
+  animation: ringing 2s linear infinite;
+}
+section.perloader span.text {
+  font-family: Saira-w600;
+  color: var(--Black-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  animation: text 2s ease-in-out infinite;
+}
+
+@keyframes ringing {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px var(--Black-color);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px var(--Black-color);
+  }
+}
+@keyframes text {
+  50% {
+    color: var(--Primary-color);
+  }
+}
 section.social-media {
   position: fixed;
   top: 50%;
