@@ -113,7 +113,7 @@ section.perloader span.text {
 section.social-media {
   position: fixed;
   top: 50%;
-  left: -50px;
+  left: -55px;
   transform: translateY(-50%);
   z-index: 100;
 }
@@ -134,6 +134,7 @@ section.social-media div.content div.icon-group a img {
   width: 20px;
   height: 20px;
   transform: rotate(90deg);
+  filter: invert(39%) sepia(66%) saturate(800%) hue-rotate(329deg) brightness(95%) contrast(93%);
 }
 
 header.navbar {
@@ -631,6 +632,44 @@ section.portfolio section.BOTTOM {
   background: linear-gradient(0deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
 }
 
+section.project {
+  background-image: url(../img/Project-Background.jpg);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.project .content {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.project .content .block p {
+  text-align: center;
+}
+section.project .content .block p.text-title {
+  font-family: Saira-w700;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+section.project .content .block p.text {
+  font-family: Saira-w300;
+}
+section.project section.white-space {
+  position: relative;
+  height: 150px;
+}
+section.project section.TOP {
+  top: 0;
+  background: linear-gradient(180deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
+}
+section.project section.BOTTOM {
+  bottom: 0;
+  background: linear-gradient(0deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
+}
+
 section.contact {
   background-image: url(../img/Home-Background.jpg);
   background-size: cover;
@@ -756,12 +795,11 @@ section.contact section.BOTTOM {
 
 footer.footer {
   background-color: var(--Black-color);
-  padding: 15px 0;
+  padding: 10px 0;
 }
 footer.footer p.text {
   color: var(--Primary-color);
   text-align: center;
-  font-size: 16px;
   font-family: Saira-w300;
 }
 
@@ -803,4 +841,5 @@ ul {
   --Primary-color: #EFEFEF;
   --Black-color: #2A2A2A;
   --Text-color: #D1D1D1;
+  --Red-color: #D95435;
 }/*# sourceMappingURL=main.css.map */

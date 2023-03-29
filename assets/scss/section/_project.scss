@@ -1,0 +1,43 @@
+section.project {
+    background-image: url(../img/Project-Background.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .content {
+        @include container;
+        @include display-flex;
+        justify-content: space-between;
+
+        .block {
+            p {
+                text-align: center;
+            }
+
+            p.text-title {
+                font-family: Saira-w700;
+                font-size: 24px;
+                padding-bottom: 10px;
+            }
+
+            p.text {
+                font-family: Saira-w300;
+            }
+        }
+    }
+
+    section.white-space {
+        position: relative;
+        height: 150px;
+    }
+
+    section.TOP {
+        top: 0;
+        background: linear-gradient(180deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
+    }
+
+    section.BOTTOM {
+        bottom: 0;
+        background: linear-gradient(0deg, var(--Primary-color) 25%, rgba(233, 233, 233, 0) 100%);
+    }
+}
