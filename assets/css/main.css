@@ -592,19 +592,22 @@ section.portfolio div.content ul.filter {
   justify-content: center;
   padding-bottom: 10px;
 }
-section.portfolio div.content ul.filter li.filter-link p {
+section.portfolio div.content ul.filter li.filter-link {
   font-family: Saira-w500;
   padding: 10px;
   margin: 0 10px;
   cursor: pointer;
 }
-section.portfolio div.content ul.filter li.filter-link p:hover {
+section.portfolio div.content ul.filter li.filter-link:hover {
+  opacity: 0.7;
+}
+section.portfolio div.content ul.filter li.filter-link.active {
   opacity: 0.7;
 }
 section.portfolio div.content div.projects {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 section.portfolio div.content div.projects a {
@@ -615,6 +618,7 @@ section.portfolio div.content div.projects a img {
   width: 100%;
   height: 100%;
   filter: grayscale(100%);
+  border-radius: 5px;
 }
 section.portfolio div.content div.projects a img:hover {
   filter: none;
