@@ -28,6 +28,7 @@ section.user-display {
 
         a.button {
             @include primary-button;
+            margin-top: 30px;
         }
     }
 

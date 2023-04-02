@@ -1,0 +1,55 @@
+section.blog {
+    padding: 70px 0;
+
+    h1.title {
+        @include section-title;
+    }
+
+    h2.sub-title {
+        @include section-sub-title;
+    }
+
+    div.content {
+        @include container;
+    }
+
+    div.card-group {
+        @include display-flex;
+        justify-content: space-between;
+        padding-top: 80px;
+
+        div.card {
+            width: 31.5%;
+
+            img {
+                width: 100%;
+                height: 270px;
+                border-radius: 5px;
+                filter: grayscale(100%);
+
+                &:hover {
+                    filter: none;
+                }
+            }
+
+            h1.card-title {
+                color: var(--Black-color);
+                padding-top: 20px;
+                font-family: 'Saira-w700';
+                font-size: 18px;
+            }
+
+            p.text {
+                color: var(--Black-color);
+                padding-top: 18px;
+                line-height: 30px;
+                font-family: Poppins-w300;
+            }
+
+            button.button {
+                @include primary-button;
+                margin-top: 30px;
+            }
+        }
+    }
+}
