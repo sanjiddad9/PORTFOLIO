@@ -202,23 +202,26 @@ section.user-display div.content-box {
   width: 85%;
   height: 100%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  align-items: start;
   padding-top: 15%;
 }
-section.user-display div.content-box p.text {
+section.user-display div.content-box div.content p.text {
   font-family: Saira-w200;
   letter-spacing: 3px;
 }
-section.user-display div.content-box h1.title {
+section.user-display div.content-box div.content h1.title {
   font-family: Saira-w600;
   font-size: 40px;
   padding-top: 12px;
 }
-section.user-display div.content-box h2.sub-title {
+section.user-display div.content-box div.content h2.sub-title {
   font-family: Poppins-w600;
   font-size: 30px;
   padding-top: 12px;
 }
-section.user-display div.content-box a.button {
+section.user-display div.content-box div.content a.button {
   display: inline-block;
   font-family: Saira-w500;
   background-color: var(--Black-color);
@@ -228,9 +231,21 @@ section.user-display div.content-box a.button {
   cursor: pointer;
   margin-top: 30px;
 }
-section.user-display div.content-box a.button:hover {
+section.user-display div.content-box div.content a.button:hover {
   background-color: transparent;
   color: var(--Black-color);
+}
+section.user-display div.content-box div.side-picture {
+  position: relative;
+  top: -15%;
+  left: 26%;
+  width: 420px;
+  height: 420px;
+}
+section.user-display div.content-box div.side-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 section.user-display section.white-space {
   position: relative;
